@@ -152,7 +152,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: #fee440;
   color: var(--slate-gray);
   font-size: 1.6rem;
   line-height: 1.75;
@@ -350,6 +350,8 @@ body {
   padding-block: 25px;
   transition: padding var(--transition-1);
   z-index: 4;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .header.active {
@@ -368,6 +370,32 @@ body {
   color: var(--raisin-black-1);
   font-size: 3.6rem;
   font-weight: var(--fw-700);
+}
+
+.styled-logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  display: inline-block;
+  background: none;
+  text-decoration: none;
+  position: relative;
+}
+
+.styled-logo::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 0.3em;
+  background: #f15bb5;
+  border-radius: 0.2em;
+  position: absolute;
+  left: 0;
+  bottom: 0.1em;
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .nav-open-btn {
@@ -509,6 +537,16 @@ body {
   color: var(--white);
 }
 
+.hero-text-box {
+  background: #fff;
+  border-radius: 1.2em;
+  padding: 1.2em 2em;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+  display: inline-block;
+  margin: 1.5em 0;
+  color: #222;
+}
+
 
 
 
@@ -590,6 +628,27 @@ body {
 .feature-list {
   display: grid;
   gap: 60px;
+}
+
+.feature-card {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.feature-card > div {
+  /* This targets the text container inside the card */
+  background: #fff;
+  border-radius: 1.2em;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+  padding: 1.2em 2em;
+  display: inline-block;
+  color: #222;
+  max-width: 100%;
 }
 
 .feature-card .card-icon {
