@@ -1,7 +1,5 @@
 Devnexora - Building Digital Product
 
-
-
 #---------- HEADER ----------#
 
 Devnexora
